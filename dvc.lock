@@ -1,0 +1,8 @@
+get_train_data:
+  cmd: python src\get_data.py Train
+  deps:
+  - path: src\get_data.py
+    md5: d3cdc0c72ed54ba479e7cba1079b0f55
+  outs:
+  - path: data\raw.csv
+    md5: 635f44d8cba81762cd1494bc6aeb6e4f
