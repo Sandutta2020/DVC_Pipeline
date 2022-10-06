@@ -1,7 +1,7 @@
 To Activate environment
 '''
-conda activate dvc 
-conda install pip 
-pip freeze > requirement.txt 
-pip install -r requirement.txt
+conda activate dvc <br>
+conda install pip <br>
+pip freeze > requirement.txt <br>
+pip install -r requirement.txt <br>
 '''
