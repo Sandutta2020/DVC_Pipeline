@@ -1,4 +1,3 @@
-
-data/processed_test.csv
-data/processed.csv
 data/*.csv
+dvc.lock
+model/*.*

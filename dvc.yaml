@@ -5,3 +5,30 @@ stages:
     - src\get_data.py
     outs:
     - data\raw.csv
+  process_data:
+    cmd: python src\process_data.py Train
+    deps:
+    - src\process_data.py
+    - data\raw.csv
+    outs:
+    - data\processed.csv
+  split_date:
+    cmd: python src\split_data.py
+    deps:
+    - src\split_data.py
+    - data\processed.csv
+    outs:
+    - data\X_train.csv
+    - data\Y_train.csv
+    - data\X_test.csv
+    - data\Y_test.csv
+  train_model:
+    cmd: python src\train.py
+    deps:
+    - src\train.py
+    - data\X_train.csv
+    - data\Y_train.csv
+    - data\X_test.csv
+    - data\Y_test.csv
+    outs:
+    - model\model.pkl
