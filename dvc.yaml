@@ -32,3 +32,11 @@ stages:
     - data\Y_test.csv
     outs:
     - model\model.pkl
+  predict:
+    cmd: python src\predict.py
+    deps:
+    - src\predict.py
+    - model\model.pkl
+    - data\X_test.csv
+    outs:
+    - data\results.csv
