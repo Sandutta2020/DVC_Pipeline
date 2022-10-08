@@ -1,4 +1,5 @@
 data/*.csv
 dvc.lock
 model/*.*
-.dvc
+.dvc/
+.dvc/plots/

@@ -40,3 +40,10 @@ stages:
     - data\X_test.csv
     outs:
     - data\results.csv
+  evaluate:
+    cmd: python src\evaluate.py
+    deps:
+    - data\results.csv
+    metrics:
+    - scores.json:
+        cache: false

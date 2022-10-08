@@ -13,4 +13,7 @@ to run all the command mentioned in dvc.yaml
 ```
 dvc repro --force
 ```
-
+to check metrics
+``` 
+dvc metrics show
+```
