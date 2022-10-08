@@ -9,7 +9,6 @@ def get_data(T_type: str) -> None:
 	data_src =data_config["url"]
 	df =pd.read_csv(data_src)
 	if T_type =='Train':
-		df =df.head(100)
 		df.to_csv("data/raw.csv",index =False)
 	else:
 		df.to_csv("data/test_data.csv",index =False)
