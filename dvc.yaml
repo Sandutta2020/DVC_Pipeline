@@ -6,7 +6,9 @@ stages:
     outs:
     - data\raw.csv
   process_data:
-    cmd: python src\process_data.py Train
+    cmd: >-
+      python src\process_data.py Train &&
+      python src\test_data.py
     deps:
     - src\process_data.py
     - data\raw.csv

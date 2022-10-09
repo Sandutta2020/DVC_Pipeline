@@ -7,10 +7,8 @@ model_parameters:
 grid_search:
   'n_estimators': [1, 2]
   'max_leaf_nodes': [100, 200, 300, 400]
-  'max_depth': [100, 200] 
+  'max_depth': [100, 200,300] 
   'class_weight': [{0: 10, 1: 90}, balanced]
   'random_state': [42]
 Train:
-  'url': https://raw.githubusercontent.com/Santanukolkata/Data_Science/master/datasets/titanic-train.csv
-Test:
-  'url': https://raw.githubusercontent.com/Santanukolkata/Data_Science/master/datasets/titanic-test.csv
+  'url': https://raw.githubusercontent.com/Sandutta2020/DVC_Pipeline/Master/data/titanic.txt

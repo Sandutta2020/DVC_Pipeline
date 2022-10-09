@@ -9,6 +9,7 @@ def process_data(T_type):
 		df.Sex =df.Sex.apply(lambda x: 1 if x=='male' else 0)
 		columns =['Pclass','Sex','Age','Survived']
 		df_new=df[columns].copy()
+		df_new['Age']=df_new['Age'].astype('int')
 		df_new.to_csv('data/processed.csv',index =False)
 	else:
 		df= pd.read_csv("data/test_data.csv")
