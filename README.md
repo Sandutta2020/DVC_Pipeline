@@ -17,3 +17,7 @@ to check metrics
 ``` 
 dvc metrics show
 ```
+for showing plot:
+```
+dvc plots show
+```
