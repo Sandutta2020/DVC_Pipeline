@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DVC Plot</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.10.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.8.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.5.1"></script>
+</head>
+<body>
+    <div id = "plot0"></div>
+<script type = "text/javascript">
+    var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {
+        "values": [
+    {
+        "": "0",
+        "Prediction": "0",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "1",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "2",
+        "Prediction": "1",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "3",
+        "Prediction": "1",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "4",
+        "Prediction": "0",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "5",
+        "Prediction": "0",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "6",
+        "Prediction": "1",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "7",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "8",
+        "Prediction": "1",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "9",
+        "Prediction": "1",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "10",
+        "Prediction": "1",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "11",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "12",
+        "Prediction": "1",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "13",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "14",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "15",
+        "Prediction": "1",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "16",
+        "Prediction": "0",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "17",
+        "Prediction": "1",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "18",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "19",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "20",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "21",
+        "Prediction": "0",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "22",
+        "Prediction": "1",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "23",
+        "Prediction": "1",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "24",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "25",
+        "Prediction": "1",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "26",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "27",
+        "Prediction": "0",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "28",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "29",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "30",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "31",
+        "Prediction": "0",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "32",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "33",
+        "Prediction": "1",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "34",
+        "Prediction": "0",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "35",
+        "Prediction": "1",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "36",
+        "Prediction": "0",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "37",
+        "Prediction": "1",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "38",
+        "Prediction": "1",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "39",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "40",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "41",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "42",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "43",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "44",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "45",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "46",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "47",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "48",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "49",
+        "Prediction": "1",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "50",
+        "Prediction": "1",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "51",
+        "Prediction": "0",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "52",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "53",
+        "Prediction": "1",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "54",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "55",
+        "Prediction": "1",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "56",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "57",
+        "Prediction": "0",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "58",
+        "Prediction": "1",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "59",
+        "Prediction": "1",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "60",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "61",
+        "Prediction": "1",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "62",
+        "Prediction": "1",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "63",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "64",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "65",
+        "Prediction": "1",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "66",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "67",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "68",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "69",
+        "Prediction": "0",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "70",
+        "Prediction": "1",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "71",
+        "Prediction": "1",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "72",
+        "Prediction": "1",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "73",
+        "Prediction": "1",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "74",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "75",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "76",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "77",
+        "Prediction": "1",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "78",
+        "Prediction": "1",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "79",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "80",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "81",
+        "Prediction": "1",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "82",
+        "Prediction": "1",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "83",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "84",
+        "Prediction": "1",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "85",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "86",
+        "Prediction": "1",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "87",
+        "Prediction": "1",
+        "Survived": "1",
+        "rev": "workspace"
+    },
+    {
+        "": "88",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    },
+    {
+        "": "89",
+        "Prediction": "0",
+        "Survived": "0",
+        "rev": "workspace"
+    }
+]
+    },
+    "title": "Displaying accuracy",
+    "mark": "rect",
+    "encoding": {
+        "x": {
+            "field": "Survived",
+            "type": "nominal",
+            "sort": "ascending",
+            "title": "Actual"
+        },
+        "y": {
+            "field": "Prediction",
+            "type": "nominal",
+            "sort": "ascending",
+            "title": "Prediction"
+        },
+        "color": {
+            "aggregate": "count",
+            "type": "quantitative"
+        },
+        "facet": {
+            "field": "rev",
+            "type": "nominal"
+        }
+    }
+}
+;
+    vegaEmbed('#plot0', spec);
+</script>
+</body>
+</html>

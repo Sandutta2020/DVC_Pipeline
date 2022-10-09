@@ -49,3 +49,11 @@ stages:
     metrics:
     - scores.json:
         cache: false
+    plots:
+    - plots.csv:
+        x: Survived
+        y: Prediction
+        title: Displaying accuracy
+        template: confusion 
+        x_label: Actual
+        y_label: Prediction
